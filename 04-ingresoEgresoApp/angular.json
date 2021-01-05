@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ingresoegresoapp": {
+    "ingresos-egresos-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ingresoegresoapp",
+            "outputPath": "dist/ingresos-egresos-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ingresoegresoapp:build"
+            "browserTarget": "ingresos-egresos-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ingresoegresoapp:build:production"
+              "browserTarget": "ingresos-egresos-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ingresoegresoapp:build"
+            "browserTarget": "ingresos-egresos-app:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ingresoegresoapp:serve"
+            "devServerTarget": "ingresos-egresos-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ingresoegresoapp:serve:production"
+              "devServerTarget": "ingresos-egresos-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ingresoegresoapp"
+  "defaultProject": "ingresos-egresos-app"
 }
