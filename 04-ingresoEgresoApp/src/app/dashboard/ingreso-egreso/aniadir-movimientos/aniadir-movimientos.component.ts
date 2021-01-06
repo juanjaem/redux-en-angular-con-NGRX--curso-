@@ -25,7 +25,7 @@ export class AniadirMovimientosComponent implements OnInit, OnDestroy {
   cargando: boolean;
 
   constructor(public ingresoEgresoService: IngresoEgresoService,
-              private store: Store<fromIngresoEgreso.StateWithIngresoEgreso>) { }
+              private store: Store<fromIngresoEgreso.State>) { }
 
   ngOnInit() {
 

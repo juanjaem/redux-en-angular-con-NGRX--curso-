@@ -19,7 +19,7 @@ export class DetalleComponent implements OnInit, OnDestroy {
   items: IngresoEgreso[];
   subscription: Subscription = new Subscription();
 
-  constructor( private store: Store<fromIngresoEgreso.StateWithIngresoEgreso>,
+  constructor( private store: Store<fromIngresoEgreso.State>,
                public ingresoEgresoService: IngresoEgresoService) { }
 
   ngOnInit() {
