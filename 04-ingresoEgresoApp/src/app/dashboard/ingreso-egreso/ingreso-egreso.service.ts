@@ -51,7 +51,7 @@ export class IngresoEgresoService {
 
                })
              )
-             .subscribe( (coleccion: any[]) => {
+             .subscribe( (coleccion: IngresoEgreso[]) => {
 
               this.store.dispatch( new SetItemsAction(coleccion) );
 

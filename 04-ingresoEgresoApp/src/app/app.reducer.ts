@@ -6,7 +6,7 @@ import * as fromAuth from './auth/auth.reducer';
 
 
 export interface AppState {
-    ui: fromUI.State;
+    ui: fromUI.UiState;
     auth: fromAuth.AuthState;
     // ingresoEgreso: fromIngresoEgreso.IngresoEgresoState;
 }

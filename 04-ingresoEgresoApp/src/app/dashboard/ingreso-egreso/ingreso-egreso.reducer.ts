@@ -23,6 +23,7 @@ export function ingresoEgresoReducer( state = estadoInicial, action: fromIngreso
         case fromIngresoEgreso.SET_ITEMS:
             return {
                 items: [
+                    // Usamos el operador ... para evitar copia por referencia
                     ...action.items.map( item => {
                         return {
                             ...item

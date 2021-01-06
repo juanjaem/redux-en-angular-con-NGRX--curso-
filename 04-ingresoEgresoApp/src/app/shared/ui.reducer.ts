@@ -2,15 +2,15 @@
 
 import * as fromUI from './ui.accions';
 
-export interface State {
+export interface UiState {
     isLoading: boolean;
 }
 
-const initState: State = {
+const initState: UiState = {
     isLoading: false
 };
 
-export function uiReducer( state = initState, action: fromUI.acciones ): State {
+export function uiReducer( state = initState, action: fromUI.acciones ): UiState {
 
     switch ( action.type ) {
 
